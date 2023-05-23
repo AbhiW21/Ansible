@@ -1,0 +1,9 @@
+---
+#to create a user on all client server.
+- name: This playbook will create a user.
+  hosts: all
+  become: true
+  tasks:
+   - name: To create a user name Abhi.
+     user: name=Abhi
+#(To find user=cat /etc/Passwd)
